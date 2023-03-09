@@ -52,12 +52,28 @@ body {
 }
 
 .home {
-  background-color: #F6BB43;
+  background-color: #D89814;
   padding-left: 45%;
   padding-right: 5%;
   padding-top: 2%;
   padding-bottom: 5%;
 
+}
+
+.home img {
+    position: absolute;
+    width: 20%;
+    transform: skew(25deg);
+    margin-left: 20%;
+    top: 25%;
+}
+
+.away img {
+    position: absolute;
+    width: 20%;
+    transform: skew(25deg);
+    margin-right: 20%;
+    top: 25%;
 }
 
 .away {
@@ -66,8 +82,8 @@ body {
   padding-left: 5%;
   padding-top: 2%;
   padding-bottom: 5%;
-  display: flex;
   height: 100%;
+  display: flex;
   justify-content: flex-end;
 }
 
