@@ -57,6 +57,7 @@ body {
   padding-right: 5%;
   padding-top: 2%;
   padding-bottom: 5%;
+  display: flex;
 
 }
 
@@ -92,6 +93,7 @@ body {
   align-self: flex-end;
   margin-bottom: 8%;
 }
+
 #vs {
   width:250px;
   height:250px;
@@ -111,4 +113,13 @@ body {
 p {
     text-align: center;
     line-height: 120px;
+}
+
+button {
+    font-size: 1.5em;
+}
+
+.home a {
+    align-self: flex-end;
+    display: inline-block;
 }

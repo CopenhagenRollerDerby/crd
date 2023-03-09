@@ -9,10 +9,17 @@ h1 {
     margin: 5%;
 }
 .col-md-3 {
-    width: 20%;
+    height: 15%;
+}
+.row p {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
 }
 img {
-    width: 100%;
     border: solid white 2px;
-    margin: 2%;
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
 }
