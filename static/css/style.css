@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Varsity;
+    src: url(../fonts/FONT_VarsityTeam-Bold.otf)
+}
+
 body {
   overflow:hidden;
 }
@@ -105,6 +110,8 @@ body {
   margin-top:-125px;
   text-align: center;
   font-size: 4em;
+  font-family: Varsity;
+  text-shadow: -3px -3px 2px #ffffff;
   z-index: 100;
   background-image: url("../img/explosion.png");
   background-size: cover;
@@ -122,4 +129,9 @@ button {
 .home a {
     align-self: flex-end;
     display: inline-block;
+}
+h1 {
+    font-family: Varsity;
+    font-size: 2.3em;
+    text-shadow: 3px 3px 2px #ffffff;
 }

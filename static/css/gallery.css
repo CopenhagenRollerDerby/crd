@@ -2,8 +2,13 @@ body {
     overflow-x: hidden;
     background-color: #53773A;
 }
+.home-body {
+    overflow-x: hidden;
+    background-color: #D89814;
+}
 h1 {
     text-align: center;
+    padding: 2%;
 }
 .row {
     margin: 5%;

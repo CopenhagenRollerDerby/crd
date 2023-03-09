@@ -24,6 +24,27 @@ away_team = [
 
 away_team = sorted(away_team, key=lambda x: x[1])
 
+home_team = [
+    ('img/home/switch_00.jpg', '#00 Switch'),
+    ('img/home/tumbleweed_111.jpg', '#111 Tumbleweed'),
+    ('img/home/frix_12.jpg', '#12 Frix'),
+    ('img/home/calm_storm_14.jpg', '#14 Calm Storm'),
+    ('img/home/evig_hvad_1984.jpg', '#1984 Evig Hvad'),
+    ('img/home/lix_2.jpg', '#2 Lix'),
+    ('img/home/amargeddon_2300.jpg', '#2300 Amargeddon'),
+    ('img/home/poison_candy_236.jpg', '#236 Poison Candy'),
+    ('img/home/zenobia_240.jpg', '#240 Zenobia'),
+    ('img/home/sibling_30.jpg', '#30 Sibling'),
+    ('img/home/speeda_42.jpg', '#42 Speeda'),
+    ('img/home/alex_54.jpg', '#54 Alex'),
+    ('img/home/olivia_5458.jpg', '#5458 Olivia'),
+    ('img/home/cosmonaut_63.jpg', '#63 Cosmonaut'),
+    ('img/home/tango_maureen_855.jpg', '#855 Tango Maureen'),
+    ('img/home/dana_might_311.jpg', '#311 Dana Might'),
+]
+
+
+
 
 @app.route('/')
 def index():
@@ -32,10 +53,8 @@ def index():
 
 @app.route('/away')
 def away():
-    away = [f'img/away/{file}' for file in os.listdir('static/img/away')]
     return render_template('away.html', away_team=away_team)
 
 @app.route('/home')
 def home():
-    away = [f'img/home/{file}' for file in os.listdir('static/img/home')]
-    return render_template('home.html', away_team=away_team)
+    return render_template('home.html', home_team=home_team)
