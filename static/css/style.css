@@ -1,0 +1,59 @@
+body {
+  overflow:hidden;
+}
+
+.view {
+  bottom:0;
+  left:0;
+  position:absolute;
+  right:0;
+  top:0;
+  transform:skew(-25deg);
+}
+
+.left,
+.right {
+  bottom:0;
+  overflow:hidden;
+  position:absolute;
+  top:0;
+}
+
+.left { 
+  left:-50%;  
+  right:50%;  
+}
+
+.divider {
+  background-color:#fc0;
+  border-left:solid 2px #000;
+  border-right:solid 2px #000;
+  bottom:-5%;
+  left:49.5%;
+  position:absolute;
+  right:49.5%;
+  top:-5%;
+  z-index:1;
+}
+
+.right {
+  left:50%;
+  right:-50%;
+}
+
+.home,
+.away {
+  bottom:-1%;
+  left:-1%;
+  position:absolute;
+  right:-1%;
+  top:-1%;
+}
+
+.home {
+  background-color: #F6BB43;
+}
+
+.away {
+  background-color: #53773A;
+}
