@@ -56,4 +56,24 @@ body {
 
 .away {
   background-color: #53773A;
+  padding-right: 65%;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.away-image {
+  vertical-align: middle;
+  padding: 13px;
+  display: inline-block;
+  transform: skew(25deg);
+}
+
+.away-image img {
+  max-width: 100%;
+}
+img {
+    float: left;
+    width:  100px;
+    border: solid 2px white;
 }

@@ -12,7 +12,13 @@
         </div>
         <div class="divider"></div>
         <div class="right">
-            <div class="away"></div>
+            <div class="away">
+            {%for player in away%}
+            <div class="away-image">
+                <img src="{{url_for('static', filename=player)}}" alt="{{home}}">
+            </div>
+            {%endfor%}
+            </div>
         </div>
     </div>
 </body>
