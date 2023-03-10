@@ -110,7 +110,8 @@ body {
   margin-top:-125px;
   text-align: center;
   font-size: 4em;
-  font-family: Varsity;
+  font-family: Helvetica;
+  font-weight: 900;
   text-shadow: -3px -3px 2px #ffffff;
   z-index: 100;
   background-image: url("../img/explosion.png");
@@ -124,6 +125,7 @@ p {
 
 button {
     font-size: 1.5em;
+    font-family: Helvetica;
 }
 
 .home a {
