@@ -29,7 +29,6 @@ html, body {
 .left { 
   left:-50%;
   right:50%;
-  height: 100vh;
 }
 
 .divider {
@@ -47,7 +46,6 @@ html, body {
 .right {
   left:50%;
   right:-50%;
-  height: 100vh;
 }
 
 .home,
