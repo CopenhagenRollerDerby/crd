@@ -8,14 +8,14 @@ html, body {
   width: 100%;
   height: 100%;
 }
+
 .view {
+  position: fixed;
   bottom:0;
   left:0;
-  position:absolute;
   right:0;
   top:0;
   transform:skew(-25deg);
-  z-index: 1;
 }
 
 .left,
@@ -33,14 +33,14 @@ html, body {
 }
 
 .divider {
-  background-color:#fc0;
+  background-color:#F14622;
   border-left:solid 2px #000;
   border-right:solid 2px #000;
   bottom:-5%;
   left:49.5%;
   position:absolute;
   right:49.5%;
-  top:-5%;
+  top:-1%;
   z-index:1;
 }
 
@@ -117,8 +117,14 @@ p {
 }
 
 button {
-    font-size: 2vw;
+    font-size: 3vw;
     font-family: Helvetica;
+}
+
+.away-button {
+}
+
+.home-button {
 }
 
 .home a {
@@ -127,6 +133,6 @@ button {
 }
 h1 {
     font-family: Varsity;
-    font-size: 2.5vw;
+    font-size: 5vmin;
     text-shadow: 3px 3px 2px #ffffff;
 }
