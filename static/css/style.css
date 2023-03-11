@@ -5,8 +5,9 @@
 
 html, body {
   overflow:hidden !important;
+  width: 100vw;
+  height: 100vh;
 }
-
 .view {
   bottom:0;
   left:0;
