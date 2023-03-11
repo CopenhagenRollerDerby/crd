@@ -28,3 +28,9 @@ img {
     max-width: 100%;
     margin: auto;
 }
+
+@media (min-width: 576px) {
+    .modal-dialog {
+    max-width: 100%;
+    margin: 1.75rem auto;
+}
