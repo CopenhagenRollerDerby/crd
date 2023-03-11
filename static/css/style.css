@@ -108,9 +108,7 @@ html, body {
 
 
 .home button {
-    display: inline-block;
     align-self: flex-end;
-    margin-bottom: 8%;
 }
 
 #vs {
@@ -146,6 +144,10 @@ p {
 button {
     font-size: 3vw;
     font-family: Helvetica;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px #ffffff;
 }
 
 .away-button {
