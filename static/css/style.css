@@ -66,22 +66,6 @@ html, body {
 
 }
 
-.home img {
-    position: absolute;
-    width: 20%;
-    transform: skew(25deg);
-    margin-left: 20%;
-    top: 25%;
-}
-
-.away img {
-    position: absolute;
-    width: 20%;
-    transform: skew(25deg);
-    margin-right: 20%;
-    top: 25%;
-}
-
 .away {
   background-color: #53773A;
   padding-right: 45%;
@@ -119,13 +103,9 @@ html, body {
 }
 
 #vs img {
-    max-width: 15vw;
-    max-height: 15vw;
+    max-width: 20vw;
+    max-height: 20vw;
     margin: auto;
-}
-#vs p {
-    position: absolute;
-    margin-top: 25%;
 }
 
 p {

@@ -11,7 +11,6 @@
         <div class="left">
             <div class="home">
                 <h1>COPENHAGEN ROLLER DERBY A</h1>
-                <img src="{{url_for('static', filename='img/crd_logo.png')}}">
                 <a href="{{url_for('home')}}"><button class="btn btn-dark">See Roster</button></a>
             </div>
         </div>
@@ -19,11 +18,16 @@
         <div class="right">
             <div class="away">
                 <a href="{{url_for('away')}}"><button class="btn btn-dark">See Roster</button></a>
-                <img src="{{url_for('static', filename='img/grd_logo.png')}}">
                 <h1>GOTHENBURG ROLLER DERBY A</h1>
             </div>
         </div>
     </div>
-    <div id="vs"><img src="{{url_for('static', filename='img/explosion.png')}}"><p>VS</p></div>
+    <div id="vs">
+        <img class="logo" src="{{url_for('static', filename='img/crd_logo.png')}}">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="{{url_for('static', filename='img/explosion.png')}}">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img class="logo" src="{{url_for('static', filename='img/grd_logo.png')}}">
+    </div>
 </body>
 </html>
