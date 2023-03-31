@@ -1,60 +1,61 @@
 @font-face {
-    font-family: Varsity;
-    src: url(../fonts/FONT_VarsityTeam-Bold.otf)
+  font-family: Varsity;
+  src: url(../fonts/FONT_VarsityTeam-Bold.otf)
 }
 
 html, body {
-  overflow:hidden !important;
+  overflow: hidden !important;
   width: 100%;
   height: 100%;
 }
 
 .view {
   position: fixed;
-  bottom:0;
-  left:0;
-  right:0;
-  top:0;
-  transform:skew(-25deg);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .left,
 .right {
-  bottom:0;
-  overflow:hidden;
-  position:absolute;
-  top:0;
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
 }
 
-.left { 
-  left:-50%;
-  right:50%;
+.left {
+  left: -50%;
+  right: 50%;
 }
 
 .divider {
-  background-color:#F14622;
-  border-left:solid 2px #000;
-  border-right:solid 2px #000;
-  bottom:-5%;
-  left:49.5%;
-  position:absolute;
-  right:49.5%;
-  top:-1%;
-  z-index:1;
+  background-color: #F14622;
+  border-left: solid 2px #000;
+  border-right: solid 2px #000;
+  bottom: -5%;
+  left: 49.5%;
+  position: absolute;
+  right: 49.5%;
+  top: -1%;
+  z-index: 1;
 }
 
 .right {
-  left:50%;
-  right:-50%;
+  left: 50%;
+  right: -50%;
 }
 
 .home,
 .away {
-  bottom:-1%;
-  left:-1%;
-  position:absolute;
-  right:-1%;
-  top:-1%;
+  bottom: -1%;
+  left: -1%;
+  position: absolute;
+  right: -1%;
+  top: -1%;
 }
 
 .home {
@@ -96,30 +97,49 @@ html, body {
   margin-bottom: 8%;
 }
 
+.header {
+  padding: 10px;
+  height: auto;
+}
+
+.team-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-bar {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
 
 .pusher {
-    height: calc(200px - 20vw);
-    width: 3vw;
+  height: calc(200px - 20vw);
+  width: 3vw;
 }
 
 .home .pusher {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 
 .home button {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 #vs {
-  width:250px;
-  height:250px;
-  margin:0 auto; 
-  position:absolute;
-  left:50%;
-  top:50%;
-  margin-left:-125px;
-  margin-top:-125px;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -125px;
+  margin-top: -125px;
   text-align: center;
   font-size: 3.5vw;
   font-family: Helvetica;
@@ -131,37 +151,42 @@ html, body {
 }
 
 #vs img {
-    max-width: 20vw;
-    max-height: 20vw;
-    margin: auto;
+  max-width: 20vw;
+  max-height: 20vw;
+  margin: auto;
 }
 
 p {
-    text-align: center;
-    line-height: 120px;
+  text-align: center;
 }
+
 
 button {
-    font-size: 3vw;
-    font-family: Helvetica;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 3px 3px 2px #ffffff;
+  font-size: 3vw;
+  font-family: Helvetica;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px #ffffff;
 }
 
-.away-button {
-}
+.away-button {}
 
-.home-button {
-}
+.home-button {}
 
 .home a {
-    align-self: flex-end;
-    display: inline-block;
+  align-self: flex-end;
+  display: inline-block;
 }
+
 h1 {
-    font-family: Varsity;
-    font-size: 5vmin;
-    text-shadow: 3px 3px 2px #ffffff;
+  font-family: Varsity;
+  font-size: 10vmin;
+  text-shadow: 3px 3px 2px #ffffff;
+}
+
+h2 {
+  font-family: Varsity;
+  font-size: 5vmin;
+  text-shadow: 3px 3px 2px #ffffff;
 }

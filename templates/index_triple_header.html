@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1, maximal-scale=1, minimal-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>April Triple Header!</title>
+</head>
+
+<body>
+    <div class="view">
+        <div class="header">
+            <h1>April Triple Header!</h1>
+            <a href="{{url_for('rules')}}"><button class="button">Roller Derby 101</button></a>
+        </div>
+        <div class="team-container">
+            <div class="team-bar" style="background-color: aqua;">
+                <h2>COPENHAGEN ROLLER DERBY B</h2>
+                <!-- <img class="logo" src="{{url_for('static', filename='img/crd_logo.png')}}"> -->
+                <a href="{{url_for('home')}}"><button class="button">See Roster</button></a>
+            </div>
+            <div class="team-bar">
+                <h2>Marburg Splatter Fairies</h2>
+                <!-- <img class="logo" src="{{url_for('static', filename='img/crd_logo.png')}}"> -->
+                <a href="{{url_for('away_1')}}"><button class="button">See Roster</button></a>
+            </div> 
+            <div class="team-bar" style="background-color: blueviolet;">
+                <h2>Wet City Rollers</h2>
+                <!-- <img class="logo" src="{{url_for('static', filename='img/crd_logo.png')}}"> -->
+                <a href="{{url_for('away_2')}}"><button class="button">See Roster</button></a>
+            </div>
+        </div>
+        </div>
+    <script src="{{url_for('static', filename='js/style.js')}}"></script>
+</body>
+
+</html>

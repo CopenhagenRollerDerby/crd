@@ -12,9 +12,15 @@ h1 {
 }
 .row {
     margin: 5%;
+    align-items: center;
+    justify-content: center;
+
 }
 .col-md-3 {
     height: 15%;
+}
+.text-container {
+    max-width: 800px;
 }
 .row p {
     font-size: 1.5em;

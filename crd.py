@@ -40,7 +40,6 @@ home_team = [
     ('img/home/olivia_5458.jpg', '#5458 Olivia'),
     ('img/home/cosmonaut_63.jpg', '#63 Cosmonaut'),
     ('img/home/tango_maureen_855.jpg', '#855 Tango Maureen'),
-    ('img/home/dana_might_311.jpg', '#311 Dana Might'),
 ]
 
 
@@ -49,15 +48,23 @@ home_team = [
 @app.route('/')
 def index():
     home = os.listdir('static/img/home')
-    return render_template('index.html')
+    return render_template('index_triple_header.html')
 
-@app.route('/away')
-def away():
+@app.route('/away_1')
+def away_1():
+    return render_template('away.html', away_team=away_team)
+
+@app.route('/away_2')
+def away_2():
     return render_template('away.html', away_team=away_team)
 
 @app.route('/home')
 def home():
     return render_template('home.html', home_team=home_team)
+
+@app.route('/rules')
+def rules():
+    return render_template('rules.html')
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
