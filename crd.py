@@ -5,21 +5,20 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 away_team_1 = [
-    ('img/away/kattriarken_11.jpg', '#11 Kattriarken'),
-    ('img/away/bumblebee_26.jpg', '#26 Bumblebee'),
-    ('img/away/zyltan_rr_08.jpg', '#08 Zyltan RR'),
-    ('img/away/survival_of_the_fittigast_23.jpg', '#23 Survival of the Fittigast'),
-    ('img/away/ouch_417.jpg', '#417 Ouch'),
-    ('img/away/grim_29.jpg', '#29 Grim'),
-    ('img/away/chips_6.jpg', '#6 Chips'),
-    ('img/away/high_five_5.jpg', '#5 High Five'),
-    ('img/away/seq_and_destroy_1894.jpg', '#1894 Seq and Destroy'),
-    ('img/away/laylow_14.jpg', '#14 Laylow'),
-    ('img/away/arty_85.jpg', '#85 Arty'),
-    ('img/away/sugar_high_2.jpg', '#2 Sugar High'),
-    ('img/away/bloody_guthrie_82.jpg', '#82 Bloody Guthrie'),
-    ('img/away/exe_qt_403.jpg', '#403 Exe QT'),
-    ('img/away/rullknufs_357.jpg', '#357 Rullknufs'),
+    ('img/msf/108_princess_evi.jpg', '#108 Princess Evi'),
+    ('img/msf/161_leilah_zerteilah.jpg', '#161 Leilah Zerteilah'),
+    ('img/msf/27_electric_sheep.jpg', '#27 Electric Sheep'),
+    ('img/msf/28_careless_ness.jpg', '#28 Careless Ness'),
+    ('img/msf/3_motorännah.jpg', '#3 Motorännah'),
+    ('img/msf/42_twisted_demon.jpg', '#42 Twisted Demon'),
+    ('img/msf/635_peetroleum_on_fire.jpg', '#635 Peetroleum On Fire'),
+    ('img/msf/667_jane_rambo.jpg', '#667 Jane Rambo'),
+    ('img/msf/69_filthy_fay.jpg', '#69 Filthy Fay'),
+    ('img/msf/707_lady_klopperfield.jpg', '#707 Lady Klopperfield'),
+    ('img/msf/7125_mac_gayver.png', '#7125 Mac Gayver'),
+    ('img/msf/713_hooks.jpg', '#713 Hooks'),
+    ('img/msf/802_futura_fearless.jpg', '#802 Futura Fearless'),
+    ('img/msf/heep_of_trouble.jpg', '#55 Heep of Trouble'),
 ]
 
 away_team_1 = sorted(away_team_1, key=lambda x: x[1])
@@ -90,11 +89,11 @@ def index():
 
 @app.route('/away_1')
 def away_1():
-    return render_template('away.html', away_team=away_team)
+    return render_template('away1.html', away_team=away_team_1)
 
 @app.route('/away_2')
 def away_2():
-    return render_template('away.html', away_team=away_team)
+    return render_template('away.html', away_team=away_team_2)
 
 @app.route('/home')
 def home():
