@@ -4,7 +4,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-away_team = [
+away_team_1 = [
     ('img/away/kattriarken_11.jpg', '#11 Kattriarken'),
     ('img/away/bumblebee_26.jpg', '#26 Bumblebee'),
     ('img/away/zyltan_rr_08.jpg', '#08 Zyltan RR'),
@@ -22,32 +22,70 @@ away_team = [
     ('img/away/rullknufs_357.jpg', '#357 Rullknufs'),
 ]
 
-away_team = sorted(away_team, key=lambda x: x[1])
+away_team_1 = sorted(away_team_1, key=lambda x: x[1])
 
-home_team = [
-    ('img/home/switch_00.jpg', '#00 Switch'),
-    ('img/home/tumbleweed_111.jpg', '#111 Tumbleweed'),
-    ('img/home/frix_12.jpg', '#12 Frix'),
-    ('img/home/calm_storm_14.jpg', '#14 Calm Storm'),
-    ('img/home/evig_hvad_1984.jpg', '#1984 Evig Hvad'),
-    ('img/home/lix_2.jpg', '#2 Lix'),
-    ('img/home/amargeddon_2300.jpg', '#2300 Amargeddon'),
-    ('img/home/poison_candy_236.jpg', '#236 Poison Candy'),
-    ('img/home/zenobia_240.jpg', '#240 Zenobia'),
-    ('img/home/sibling_30.jpg', '#30 Sibling'),
-    ('img/home/speeda_42.jpg', '#42 Speeda'),
-    ('img/home/alex_54.jpg', '#54 Alex'),
-    ('img/home/olivia_5458.jpg', '#5458 Olivia'),
-    ('img/home/cosmonaut_63.jpg', '#63 Cosmonaut'),
-    ('img/home/tango_maureen_855.jpg', '#855 Tango Maureen'),
+away_team_2 = [
+    ('img/away/kattriarken_11.jpg', '#11 Kattriarken'),
+    ('img/away/bumblebee_26.jpg', '#26 Bumblebee'),
+    ('img/away/zyltan_rr_08.jpg', '#08 Zyltan RR'),
+    ('img/away/survival_of_the_fittigast_23.jpg', '#23 Survival of the Fittigast'),
+    ('img/away/ouch_417.jpg', '#417 Ouch'),
+    ('img/away/grim_29.jpg', '#29 Grim'),
+    ('img/away/chips_6.jpg', '#6 Chips'),
+    ('img/away/high_five_5.jpg', '#5 High Five'),
+    ('img/away/seq_and_destroy_1894.jpg', '#1894 Seq and Destroy'),
+    ('img/away/laylow_14.jpg', '#14 Laylow'),
+    ('img/away/arty_85.jpg', '#85 Arty'),
+    ('img/away/sugar_high_2.jpg', '#2 Sugar High'),
+    ('img/away/bloody_guthrie_82.jpg', '#82 Bloody Guthrie'),
+    ('img/away/exe_qt_403.jpg', '#403 Exe QT'),
+    ('img/away/rullknufs_357.jpg', '#357 Rullknufs'),
 ]
 
 
+away_team_2 = sorted(away_team_2, key=lambda x: x[1])
+
+#home_team = [
+#    ('img/crd_a/switch_00.jpg', '#00 Switch'),
+#    ('img/crd_a/tumbleweed_111.jpg', '#111 Tumbleweed'),
+#    ('img/crd_a/frix_12.jpg', '#12 Frix'),
+#    ('img/crd_a/calm_storm_14.jpg', '#14 Calm Storm'),
+#    ('img/crd_a/evig_hvad_1984.jpg', '#1984 Evig Hvad'),
+#    ('img/crd_a/lix_2.jpg', '#2 Lix'),
+#    ('img/crd_a/amargeddon_2300.jpg', '#2300 Amargeddon'),
+#    ('img/crd_a/poison_candy_236.jpg', '#236 Poison Candy'),
+#    ('img/crd_a/zenobia_240.jpg', '#240 Zenobia'),
+#    ('img/crd_a/sibling_30.jpg', '#30 Sibling'),
+#    ('img/crd_a/speeda_42.jpg', '#42 Speeda'),
+#    ('img/crd_a/alex_54.jpg', '#54 Alex'),
+#    ('img/crd_a/olivia_5458.jpg', '#5458 Olivia'),
+#    ('img/crd_a/cosmonaut_63.jpg', '#63 Cosmonaut'),
+#    ('img/crd_a/tango_maureen_855.jpg', '#855 Tango Maureen'),
+#]
+
+home_team = [
+    ('img/crd_b/00_switch.jpg', '#00 Switch'),
+    ('img/crd_b/07_annabiotics.jpg', '#07 Annabiotics'),
+    ('img/crd_b/1337_mc_rowhammer.jpg', '#1337 MC Rowhammer'),
+    ('img/crd_b/19_brutalis.jpg', '#19 Brutalis'),
+    ('img/crd_b/236_poison_candy.jpg', '#236 Poison Candy'),
+    ('img/crd_b/256_oxytoxin.jpg', '#256 Oxytoxin'),
+    ('img/crd_b/30_sibling.jpg', '#30 Sibling'),
+    ('img/crd_b/321_polly_rocket.jpg', '#321 Polly Rocket'),
+    ('img/crd_b/390_falke.jpg', '#390 Falke'),
+    ('img/crd_b/4_ea.jpg', '#4 Ea'),
+    ('img/crd_b/5458_olivia.jpg', '#5458 Olivia'),
+    ('img/crd_b/69_bethamphetamine.jpg', '#69 Bethamphetamine'),
+    ('img/crd_b/74_møjn.jpg', '#74 Møjn'),
+    ('img/crd_b/855_tango_maureen.jpg', '#855 Tango Maureen'),
+    ('img/crd_b/89_malika.jpg', '#89 Malika'),
+    ('img/crd_b/95_xena.jpg', '#95 Xena'),
+    ('img/crd_a/tumbleweed_111.jpg', '#111 Tumbleweed'),
+]
 
 
 @app.route('/')
 def index():
-    home = os.listdir('static/img/home')
     return render_template('index_triple_header.html')
 
 @app.route('/away_1')
