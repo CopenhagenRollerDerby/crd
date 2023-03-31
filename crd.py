@@ -24,21 +24,26 @@ away_team_1 = [
 away_team_1 = sorted(away_team_1, key=lambda x: x[1])
 
 away_team_2 = [
-    ('img/away/kattriarken_11.jpg', '#11 Kattriarken'),
-    ('img/away/bumblebee_26.jpg', '#26 Bumblebee'),
-    ('img/away/zyltan_rr_08.jpg', '#08 Zyltan RR'),
-    ('img/away/survival_of_the_fittigast_23.jpg', '#23 Survival of the Fittigast'),
-    ('img/away/ouch_417.jpg', '#417 Ouch'),
-    ('img/away/grim_29.jpg', '#29 Grim'),
-    ('img/away/chips_6.jpg', '#6 Chips'),
-    ('img/away/high_five_5.jpg', '#5 High Five'),
-    ('img/away/seq_and_destroy_1894.jpg', '#1894 Seq and Destroy'),
-    ('img/away/laylow_14.jpg', '#14 Laylow'),
-    ('img/away/arty_85.jpg', '#85 Arty'),
-    ('img/away/sugar_high_2.jpg', '#2 Sugar High'),
-    ('img/away/bloody_guthrie_82.jpg', '#82 Bloody Guthrie'),
-    ('img/away/exe_qt_403.jpg', '#403 Exe QT'),
-    ('img/away/rullknufs_357.jpg', '#357 Rullknufs'),
+    ('img/wcr/07–TheQuacken.jpg', '#07 The Quacken'),
+    ('img/wcr/103–SuperMarion.jpg', '#103 Super Marion'),
+    ('img/wcr/10–TitsAcid.jpg', '#10 Tits & Acid'),
+    ('img/wcr/12–MeanMachine.jpg', '#12 Mean Machine'),
+    ('img/wcr/15–HannahHardhendt.jpg', '#15 Hanna Hardhendt'),
+    ('img/wcr/2-MadDonna.jpg', '#2 Mad Donna'),
+    ('img/wcr/21–Assguardian.jpg', '#21 Assguardian'),
+    ('img/wcr/242–PennyViolence.jpg', '#242 Penny Violence'),
+    ('img/wcr/3-VirginiaWoof!.jpg', '#3 Virginia Woof!'),
+    ('img/wcr/314–Blockpicker.jpg', '#314 Blockpicker'),
+    ('img/wcr/48–BloodyLongstockings.jpg', '#48 Bloody Longstockings'),
+    ('img/wcr/54-PattiShit.jpg', '#54 Patti Shit'),
+    ('img/wcr/55-SickDagger.jpg', '#55 Sick Dagger'),
+    ('img/wcr/59–LucidLucy.jpg', '#59 Lucid Lucy'),
+    ('img/wcr/5–Sunny.jpg', '#5 Sunny'),
+    ('img/wcr/8-HøssyGalore.jpg', '#8 Høssy Galore'),
+    ('img/wcr/blOda.jpg', 'blOda'),
+    ('img/wcr/MarieFurie.jpg', 'Marie Furie'),
+    ('img/wcr/MushUMayhem.jpg', 'MushU Mayhem'),
+    ('img/wcr/Nefertitties.jpg', 'Nefertitties'),
 ]
 
 
@@ -93,7 +98,7 @@ def away_1():
 
 @app.route('/away_2')
 def away_2():
-    return render_template('away.html', away_team=away_team_2)
+    return render_template('away2.html', away_team=away_team_2)
 
 @app.route('/home')
 def home():
