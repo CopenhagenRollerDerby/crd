@@ -11,7 +11,7 @@
     <h1 class="light">Marburg Splatter Fairies</h1>
 <div class="row">
     {% for skater in away_team %}
-    <div class="col-md-3">
+    <div class="col-6 col-sm-4 ">
         <a href="{{url_for('static', filename=skater[0])}}" data-toggle="lightbox" data-gallery="example-gallery" data-caption="{{skater[1]}}" ><img src="{{url_for('static', filename=skater[0])}}" class="img-fluid">
     </a>
     <p>{{skater[1]}}</p>

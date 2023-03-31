@@ -11,27 +11,28 @@
 <body>
     <div class="view">
         <div class="header">
-            <h1>April Triple Header!</h1>
+            <h1>Triple Header!</h1>
             <div class="button-row">
-                <a href="{{url_for('rules')}}"><button class="button">Roller Derby 101</button></a>
+                <a href="{{url_for('rules')}}"><button class="button">Roller derby rules</button></a>
                 <a href="{{url_for('schedule')}}"><button class="button">Schedule</button></a>
             </div>
         </div>
         <div class="team-container">
-            <div class="team-bar" style="background-color: aqua;">
+            
+            <div class="team-bar" style="background-color: #4E0B74;">
+                <h2 class="light">Marburg Splatter Fairies</h2>
+                <!-- <img class="logo" src="{{url_for('static', filename='img/crd_logo.png')}}"> -->
+                <a href="{{url_for('away_1')}}"><button class="button">Team Roster!</button></a>
+            </div>
+            <div class="team-bar" style="background-color: #D89814;">
                 <h2>COPENHAGEN ROLLER DERBY B</h2>
                 <!-- <img class="logo" src="{{url_for('static', filename='img/crd_logo.png')}}"> -->
-                <a href="{{url_for('home')}}"><button class="button">See Roster</button></a>
+                <a href="{{url_for('home')}}"><button class="button">Team Roster!</button></a>
             </div>
-            <div class="team-bar">
-                <h2>Marburg Splatter Fairies</h2>
+            <div class="team-bar" style="background-color: #282262;">
+                <h2 class="light">Wet City Rollers</h2>
                 <!-- <img class="logo" src="{{url_for('static', filename='img/crd_logo.png')}}"> -->
-                <a href="{{url_for('away_1')}}"><button class="button">See Roster</button></a>
-            </div>
-            <div class="team-bar" style="background-color: blueviolet;">
-                <h2>Wet City Rollers</h2>
-                <!-- <img class="logo" src="{{url_for('static', filename='img/crd_logo.png')}}"> -->
-                <a href="{{url_for('away_2')}}"><button class="button">See Roster</button></a>
+                <a href="{{url_for('away_2')}}"><button class="button">Team Roster!</button></a>
             </div>
         </div>
     </div>

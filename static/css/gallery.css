@@ -2,36 +2,44 @@ body {
     overflow-x: hidden;
     background-color: #4E0B74;
 }
+
 .home-body {
     overflow-x: hidden;
     background-color: #D89814;
 }
+
 .away2-body {
     overflow-x: hidden;
     background-color: #282262;
 
 }
+
 h1 {
     text-align: center;
     padding: 2%;
 }
+
 .row {
     margin: 5%;
     align-items: center;
     justify-content: center;
 
 }
+
 .col-md-3 {
     height: 15%;
 }
+
 .text-container {
     max-width: 800px;
 }
+
 .row p {
     font-size: 1.5em;
     font-weight: 600;
     color: white;
 }
+
 img {
     border: solid white 2px;
     display: block;
@@ -42,6 +50,7 @@ img {
 
 @media (min-width: 576px) {
     .modal-dialog {
-    max-width: 100%;
-    margin: 1.75rem auto;
+        max-width: 100%;
+        margin: 1.75rem auto;
+    }
 }
