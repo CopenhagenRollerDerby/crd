@@ -4,7 +4,7 @@
 }
 
 html, body {
-  overflow: hidden !important;
+  overflow-x: hidden !important;
   width: 100%;
   height: 100%;
 }
@@ -183,6 +183,11 @@ h1 {
   font-family: Varsity;
   font-size: 10vmin;
   text-shadow: 3px 3px 2px #ffffff;
+}
+
+h1.light {
+  color: #dddddd;
+  text-shadow: 3px 3px 2px #000;
 }
 
 h2 {

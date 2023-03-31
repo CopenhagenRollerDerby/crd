@@ -1,10 +1,15 @@
 body {
     overflow-x: hidden;
-    background-color: #53773A;
+    background-color: #4E0B74;
 }
 .home-body {
     overflow-x: hidden;
     background-color: #D89814;
+}
+.away2-body {
+    overflow-x: hidden;
+    background-color: #282262;
+
 }
 h1 {
     text-align: center;

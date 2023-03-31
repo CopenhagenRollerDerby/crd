@@ -12,7 +12,10 @@
     <div class="view">
         <div class="header">
             <h1>April Triple Header!</h1>
-            <a href="{{url_for('rules')}}"><button class="button">Roller Derby 101</button></a>
+            <div class="button-row">
+                <a href="{{url_for('rules')}}"><button class="button">Roller Derby 101</button></a>
+                <a href="{{url_for('schedule')}}"><button class="button">Schedule</button></a>
+            </div>
         </div>
         <div class="team-container">
             <div class="team-bar" style="background-color: aqua;">
@@ -24,14 +27,14 @@
                 <h2>Marburg Splatter Fairies</h2>
                 <!-- <img class="logo" src="{{url_for('static', filename='img/crd_logo.png')}}"> -->
                 <a href="{{url_for('away_1')}}"><button class="button">See Roster</button></a>
-            </div> 
+            </div>
             <div class="team-bar" style="background-color: blueviolet;">
                 <h2>Wet City Rollers</h2>
                 <!-- <img class="logo" src="{{url_for('static', filename='img/crd_logo.png')}}"> -->
                 <a href="{{url_for('away_2')}}"><button class="button">See Roster</button></a>
             </div>
         </div>
-        </div>
+    </div>
     <script src="{{url_for('static', filename='js/style.js')}}"></script>
 </body>
 
