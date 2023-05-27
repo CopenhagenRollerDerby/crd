@@ -64,8 +64,10 @@ home_team = [
     ('img/crd/rocket.jpg', '#321 Polly Rocket'),
     ('img/crd/xena.jpg', 'Xena (bench)'),
     ('img/crd/malika.png', 'Malika (line up)'),
-    
 ]
+
+home_team = sorted(home_team, key=lambda x: x[1])
+
 
 @app.route('/')
 def index():
