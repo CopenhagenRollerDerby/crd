@@ -50,48 +50,23 @@ away_team_2 = [
 
 away_team_2 = sorted(away_team_2, key=lambda x: x[1])
 
-#home_team = [
-#    ('img/crd_a/switch_00.jpg', '#00 Switch'),
-#    ('img/crd_a/tumbleweed_111.jpg', '#111 Tumbleweed'),
-#    ('img/crd_a/frix_12.jpg', '#12 Frix'),
-#    ('img/crd_a/calm_storm_14.jpg', '#14 Calm Storm'),
-#    ('img/crd_a/evig_hvad_1984.jpg', '#1984 Evig Hvad'),
-#    ('img/crd_a/lix_2.jpg', '#2 Lix'),
-#    ('img/crd_a/amargeddon_2300.jpg', '#2300 Amargeddon'),
-#    ('img/crd_a/poison_candy_236.jpg', '#236 Poison Candy'),
-#    ('img/crd_a/zenobia_240.jpg', '#240 Zenobia'),
-#    ('img/crd_a/sibling_30.jpg', '#30 Sibling'),
-#    ('img/crd_a/speeda_42.jpg', '#42 Speeda'),
-#    ('img/crd_a/alex_54.jpg', '#54 Alex'),
-#    ('img/crd_a/olivia_5458.jpg', '#5458 Olivia'),
-#    ('img/crd_a/cosmonaut_63.jpg', '#63 Cosmonaut'),
-#    ('img/crd_a/tango_maureen_855.jpg', '#855 Tango Maureen'),
-#]
-
 home_team = [
-    ('img/crd_b/00_switch.jpg', '#00 Switch'),
-    ('img/crd_b/07_annabiotics.jpg', '#07 Annabiotics'),
-    ('img/crd_b/1337_mc_rowhammer.jpg', '#1337 MC Rowhammer'),
-    ('img/crd_b/19_brutalis.jpg', '#19 Brutalis'),
-    ('img/crd_b/236_poison_candy.jpg', '#236 Poison Candy'),
-    ('img/crd_b/256_oxytoxin.jpg', '#256 Oxytoxin'),
-    ('img/crd_b/30_sibling.jpg', '#30 Sibling'),
-    ('img/crd_b/321_polly_rocket.jpg', '#321 Polly Rocket'),
-    ('img/crd_b/390_falke.jpg', '#390 Falke'),
-    ('img/crd_b/4_ea.jpg', '#4 Ea'),
-    ('img/crd_b/5458_olivia.jpg', '#5458 Olivia'),
-    ('img/crd_b/69_bethamphetamine.jpg', '#69 Bethamphetamine'),
-    ('img/crd_b/74_møjn.jpg', '#74 Møjn'),
-    ('img/crd_b/855_tango_maureen.jpg', '#855 Tango Maureen'),
-    ('img/crd_b/89_malika.jpg', '#89 Malika'),
-    ('img/crd_b/95_xena.jpg', '#95 Xena'),
+    ('img/crd_a/switch_00.jpg', '#00 Switch'),
     ('img/crd_a/tumbleweed_111.jpg', '#111 Tumbleweed'),
+    ('img/crd_a/frix_12.jpg', '#12 Frix'),
+    ('img/crd_a/amargeddon_2300.jpg', '#2300 Amargeddon'),
+    ('img/crd_a/poison_candy_236.jpg', '#236 Poison Candy'),
+    ('img/crd_a/zenobia_240.jpg', '#240 Zenobia'),
+    ('img/crd_a/sibling_30.jpg', '#30 Sibling'),
+    ('img/crd_a/speeda_42.jpg', '#42 Speeda'),
+    ('img/crd_a/alex_54.jpg', '#54 Alex'),
+    ('img/crd_a/olivia_5458.jpg', '#5458 Olivia'),
+    ('img/crd_a/cosmonaut_63.jpg', '#63 Cosmonaut')
 ]
-
 
 @app.route('/')
 def index():
-    return render_template('index_triple_header.html')
+    return render_template('index_single.html')
 
 @app.route('/away_1')
 def away_1():

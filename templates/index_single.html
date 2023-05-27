@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1, maximal-scale=1, minimal-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/crd_logo.png') }}">
+    <title>CRD Season Finale!</title>
+</head>
+
+<body>
+    <div class="view">
+        <div class="header">
+            <h1>Season Finale!</h1>
+            <div class="button-row">
+                <a href="{{url_for('rules')}}"><button class="button">Roller derby rules</button></a>
+                <a href="{{url_for('schedule')}}"><button class="button">Schedule</button></a>
+            </div>
+        </div>
+
+        <div class="team-container-single">
+
+            <div class="left">
+                <div class="home">
+                    <h2>COPENHAGEN ROLLER DERBY A</h2>
+                    <a href="{{url_for('home')}}"><button class="home-button">See Roster</button></a>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="right">
+                <div class="away">
+                    <a href="{{url_for('away_1')}}"><button class="away-button">See Roster</button></a>
+                    <h2>SWANSEA ROLER DERBY</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='js/style.js')}}"></script>
+</body>
+
+</html>
