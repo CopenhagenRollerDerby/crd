@@ -26,8 +26,6 @@ html, body {
   overflow: hidden;
   position: absolute;
   top: 0;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .left {
@@ -35,14 +33,8 @@ html, body {
   right: 50%;
 }
 
-.right {
-  left: 50%;
-  right: -50%;
-  background-color: #53773A;
-}
-
 .divider {
-  background-color: #000;
+  background-color: #F14622;
   border-left: solid 2px #000;
   border-right: solid 2px #000;
   bottom: -5%;
@@ -53,6 +45,52 @@ html, body {
   z-index: 1;
 }
 
+.right {
+  left: 50%;
+  right: -50%;
+}
+
+.home,
+.away {
+  bottom: -1%;
+  left: -1%;
+  position: absolute;
+  right: -1%;
+  top: -1%;
+}
+
+.home {
+  background-color: #D89814;
+  padding-left: 45%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home .stack-em {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.away .stack-em {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.away {
+  background-color: #53773A;
+  padding-right: 45%;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
 
 .away h1 {
   display: inline-block;
@@ -61,11 +99,9 @@ html, body {
 }
 
 .header {
-  width: 100%;
   padding: 10px;
   height: auto;
   align-items: center;
-
 }
 
 .button-row {
@@ -80,7 +116,7 @@ html, body {
   width: 100%;
   flex: 1;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 
 .team-bar {
@@ -90,6 +126,16 @@ html, body {
   justify-content: center;
   flex: 1;
   align-items: center;
+}
+
+
+.pusher {
+  height: calc(200px - 20vw);
+  width: 3vw;
+}
+
+.home .pusher {
+  align-self: flex-end;
 }
 
 
@@ -173,76 +219,13 @@ h2.light {
   text-shadow: 3px 3px 2px #000;
 }
 
-.team-container-single {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  transform: skew(-25deg);
-}
-
-.home {
-  background-color: #D89814;
-  padding-left: 45%;
-  padding-right: 5%;
-  padding-top: 2%;
-  padding-bottom: 5%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.away {
-  background-color: #53773A;
-  padding-right: 45%;
-  padding-left: 5%;
-  padding-top: 2%;
-  padding-bottom: 5%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.away h1 {
-  display: inline-block;
-  align-self: flex-end;
-  margin-bottom: 8%;
-}
-
-.home button {
-  align-self: flex-end;
-}
-
-#vs {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -125px;
-  margin-top: -125px;
-  text-align: center;
-  font-size: 3.5vw;
-  font-family: Helvetica;
-  font-weight: 900;
-  text-shadow: -3px -3px 2px #ffffff;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-}
-
-#vs img {
-  max-width: 20vw;
-  max-height: 20vw;
-  margin: auto;
-}
-
 @media screen and (max-width: 800px) {
   .h1 {
     text-shadow: 2px 2px 1px;
   }
 
   .h2 {
-    text-shadow: 2px 2px 1px #ffffff;
+    text-shadow: 2px 2px 1px;
   }
 
   button {
@@ -255,7 +238,7 @@ h2.light {
 
   h2 {
     font-size: 6vmin;
-    text-shadow: 1px 1px 1px #ffffff;
+    text-shadow: 1px 1px 1px;
   }
 
   button {

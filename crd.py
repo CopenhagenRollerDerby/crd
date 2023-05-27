@@ -5,20 +5,19 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 away_team_1 = [
-    ('img/msf/108_princess_evi.jpg', '#108 Princess Evi'),
-    ('img/msf/161_leilah_zerteilah.jpg', '#161 Leilah Zerteilah'),
-    ('img/msf/27_electric_sheep.jpg', '#27 Electric Sheep'),
-    ('img/msf/28_careless_ness.jpg', '#28 Careless Ness'),
-    ('img/msf/3_motorännah.jpg', '#3 Motorännah'),
-    ('img/msf/42_twisted_demon.jpg', '#42 Twisted Demon'),
-    ('img/msf/635_peetroleum_on_fire.jpg', '#635 Peetroleum On Fire'),
-    ('img/msf/667_jane_rambo.jpg', '#667 Jane Rambo'),
-    ('img/msf/69_filthy_fay.jpg', '#69 Filthy Fay'),
-    ('img/msf/707_lady_klopperfield.jpg', '#707 Lady Klopperfield'),
-    ('img/msf/7125_mac_gayver.png', '#7125 Mac Gayver'),
-    ('img/msf/713_hooks.jpg', '#713 Hooks'),
-    ('img/msf/802_futura_fearless.jpg', '#802 Futura Fearless'),
-    ('img/msf/heep_of_trouble.jpg', '#55 Heep of Trouble'),
+    ('img/scrd/Baby Bear (line up manager).jpg', 'Baby Bear (line up)'),
+    ('img/scrd/Biasutti 4.jpg', '#4 Biasutti'),
+    ('img/scrd/Cat Hook (bench).jpg', 'Cat Hook (bench)'),
+    ('img/scrd/Crash Landers 108.jpg', '#108 Crash Landers'),
+    ('img/scrd/Emma 8.jpg', '#8 Emma'),
+    ('img/scrd/Jainareign 220.jpg', '#220 Jainareign'),
+    ('img/scrd/Jekyll 303.jpg', '#303 Jekyll'),
+    ('img/scrd/Killer Ree 64.jpg', '#64 Killer Ree'),
+    ('img/scrd/Peters 9.jpg', '#9 Peters'),
+    ('img/scrd/Queen of Scheme 69.jpg', '#69 Queen of Scheme'),
+    ('img/scrd/S_care Bear 256.jpg', "#256 S'care Bear"),
+    ('img/scrd/Snail 5050.jpg', '#5050 Snail'),
+    ('img/scrd/Victory 37.jpg', '#37 Victory'),
 ]
 
 away_team_1 = sorted(away_team_1, key=lambda x: x[1])
@@ -51,22 +50,26 @@ away_team_2 = [
 away_team_2 = sorted(away_team_2, key=lambda x: x[1])
 
 home_team = [
-    ('img/crd_a/switch_00.jpg', '#00 Switch'),
-    ('img/crd_a/tumbleweed_111.jpg', '#111 Tumbleweed'),
-    ('img/crd_a/frix_12.jpg', '#12 Frix'),
-    ('img/crd_a/amargeddon_2300.jpg', '#2300 Amargeddon'),
-    ('img/crd_a/poison_candy_236.jpg', '#236 Poison Candy'),
-    ('img/crd_a/zenobia_240.jpg', '#240 Zenobia'),
-    ('img/crd_a/sibling_30.jpg', '#30 Sibling'),
-    ('img/crd_a/speeda_42.jpg', '#42 Speeda'),
-    ('img/crd_a/alex_54.jpg', '#54 Alex'),
-    ('img/crd_a/olivia_5458.jpg', '#5458 Olivia'),
-    ('img/crd_a/cosmonaut_63.jpg', '#63 Cosmonaut')
+    ('img/crd/switch.jpg', '#00 Switch'),
+    ('img/crd/placeholder.png', '#111 Tumbleweed'),
+    ('img/crd/frix.jpg', '#12 Frix'),
+    ('img/crd/amar.jpg', '#2300 Amargeddon'),
+    ('img/crd/candy.jpg', '#236 Poison Candy'),
+    ('img/crd/placeholder.png', '#240 Zenobia'),
+    ('img/crd/sibling.jpg', '#30 Sibling'),
+    ('img/crd/speeda.jpg', '#42 Speeda'),
+    ('img/crd/placeholder.png', '#54 Alex'),
+    ('img/crd/olivia.jpg', '#5458 Olivia'),
+    ('img/crd/mcdeath.jpg', '#4145 Lady MacDeath'),
+    ('img/crd/rocket.jpg', '#321 Polly Rocket'),
+    ('img/crd/xena.jpg', 'Xena (bench)'),
+    ('img/crd/malika.png', 'Malika (line up)'),
+    
 ]
 
 @app.route('/')
 def index():
-    return render_template('index_single.html')
+    return render_template('index_single_alt.html')
 
 @app.route('/away_1')
 def away_1():
